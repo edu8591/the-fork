@@ -17,7 +17,8 @@ export const RestaurantCard = ({ restaurant }: RestaurantCardProps) => {
     <Card>
       <CardHeader>
         <CardTitle className="flex justify-between">
-          {restaurant.name} <Badge>{restaurant.category}</Badge>
+          {restaurant.name}{" "}
+          <Badge variant="destructive">{restaurant.category}</Badge>
         </CardTitle>
       </CardHeader>
       <CardContent>
